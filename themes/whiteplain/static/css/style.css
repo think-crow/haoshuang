@@ -83,6 +83,7 @@ blockquote blockquote blockquote blockquote {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+
 }
 .site-navi {
   display: -webkit-flex;
@@ -186,6 +187,7 @@ h1.title::before {
   margin-right: auto;
   margin-bottom: 20px;
   font-size: 1.6em;
+  
 }
 
 /* Code highlight */
@@ -200,6 +202,7 @@ h1.title::before {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  /* border: 1px solid red; */
 }
 
 /* article */

@@ -44,7 +44,7 @@
   .gsc-loading-image {
     width: 3rem;
     height: 3rem;
-    background-image: url("/image/mona-loading-default.gif");
+    background-image: url("/haoshuang/image/mona-loading-default.gif");
     background-size: contain;
     background-repeat: no-repeat;
   }
