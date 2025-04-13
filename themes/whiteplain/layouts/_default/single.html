@@ -1,0 +1,119 @@
+
+{{ define "main" }}
+  <div class="main" role="main">
+
+    <div class="article-meta">
+      <h1 class="title">{{ .Title | markdownify }}</h1>
+      <h3 class="meta-line">
+        <span>{{ partial "meta.html" . }}</span>
+      </h3>
+      </div>
+
+    {{ if eq .Type "poetry" }}
+      <!-- Poetry 页面自定义布局 -->
+      <div class="poetry-zong">
+              <div class="poetry-category">
+        <label><input type="radio" name="category" value="all" onclick="filterCategory('all')" checked> 全部</label>
+        <label><input type="radio" name="category" value="poetrys_1" onclick="filterCategory('poetrys_1')"> 诗集</label>
+        <label><input type="radio" name="category" value="songs_2" onclick="filterCategory('songs_2')"> 歌曲</label>
+      </div>
+      <!-- <hr class="article-title-bottom"> -->
+      <!-- 诗集专用内容 -->
+      <div class="poetry-container">
+          <div id="poetry-list" class="poetry-content">诗集加载失败.... </div>
+          <div class="poetry-pagination">
+              <button onclick="prevPage()">上一页</button>
+              <span id="page-info"></span>
+              <button onclick="nextPage()">下一页</button>
+          </div>
+      </div>
+      </div>
+
+
+    {{ else if eq .Type "note" }}
+      <!-- Note 页面自定义布局 -->
+      <div id="note-list"> </div>
+
+      <!-- 加载动画 -->
+      <div id="loading" class="gsc-loading" style="display: none;">
+        <div class="gsc-loading-image"></div>
+        <div class="gsc-loading-text">Loading . . .</div>
+      </div>
+    {{ else }}
+      <!-- 默认布局（如博客文章、主页等） -->
+    <article class="article">
+
+      <ul class="article-meta">
+        <li class="article-meta-date"><time>{{ .Date.Format (default "January 2, 2006" $.Site.Params.dateFormat) }}</time></li>
+        {{- if .Params.categories }}
+        {{- range .Params.categories }}
+        <li class="article-meta-categories">
+          <a href="{{ "/" | relURL }}categories/{{ . | urlize }}/">
+            <i class="fa-solid fa-folder"></i>
+            {{ . }}
+          </a>&nbsp;
+        </li>
+        {{- end }}
+        {{- end }}
+        {{- if .Params.tags }}
+        {{- range .Params.tags }}
+        <li class="article-meta-tags">
+          <a href="{{ "/" | relURL }}tags/{{ . | urlize }}/">
+            <i class="fa-solid fa-tag"></i>
+            {{ . }}
+          </a>&nbsp;
+        </li>
+        {{- end }}
+        {{- end }}
+      </ul>
+      {{ partial "toc.html" . }}
+      {{ .Content }}
+    </article>
+
+    {{- if .Params.series }}
+    <section class="article-series">
+      {{- $thispagefilepath := .File.Path }}
+      {{- range .Params.series }}
+      {{- $lseries := replaceRE "( |–)" "-" (lower .) }}
+      <h2 class="series-title"><a href="{{ "/" | relURL }}series/{{ . | urlize }}/"><i class="fa-solid fa-book"></i>&nbsp;{{ . }}</a></h2>
+      <ol reversed="reversed" class="series">
+      {{- range (index $.Site.Taxonomies.series $lseries).Pages.ByDate.Reverse }}
+      {{- if eq $thispagefilepath .File.Path }}
+        <li class="active">{{ .LinkTitle }}</li>
+      {{- else }}
+        <li><a href="{{ .Permalink | relURL }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+      {{- end }}
+      </ol>
+      {{- end }}
+    </section>
+    {{- end }}
+
+    <!-- {{ partial "share.html" . }} -->
+
+    {{- if and .Site.Config.Services.Disqus.Shortname (or (not (isset .Params "comments")) (eq .Params.comments nil) .Params.comments) }}
+    <div class="disqus-comments">
+      {{ template "_internal/disqus.html" . }}
+    </div>
+    {{- end }}
+
+    <ul class="pager article-pager">
+      {{- if .NextInSection }}
+      <li class="pager-newer">
+          <a href="{{ .NextInSection.Permalink | relURL }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">&lt; Newer</a>
+      </li>
+      {{- else }}
+      <li class="pager-newer pager-noitem">&lt; Newer</li>
+      {{- end }}
+      {{- if .PrevInSection }}
+      <li class="pager-older">
+        <a href="{{ .PrevInSection.Permalink | relURL }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">Older &gt;</a>
+      </li>
+      {{- else }}
+      <li class="pager-older pager-noitem">Older &gt;</li>
+      {{- end }}
+    </ul>
+    {{ partial "comments.html" . }}
+    {{- end }}
+  </div>
+{{ end }}

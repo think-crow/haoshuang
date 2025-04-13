@@ -1,0 +1,18 @@
+
+{{ define "main" }}
+  <div class="main" role="main">
+    <div class="article-meta">
+      <h1 class="title">{{ .Title | markdownify }}</h1>
+      <h3 class="meta-line">
+        <span>{{ partial "meta.html" . }}</span>
+      </h3>
+      </div>
+    <article class="article about">
+      {{ with .Params.subtitle }}<h2 class="article-subtitle">{{ . }}</h2>{{ end }}
+      <!-- <hr class="article-title-bottom"> -->
+      <!-- {{ partial "author.html" . }} -->
+      {{ .Content }}
+    </article>
+    {{ partial "comments.html" . }}
+  </div>
+{{ end }}

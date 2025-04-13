@@ -1,0 +1,107 @@
+
+{{ define "main" }}
+
+  <div class="main" role="main">
+    <div class="article-meta">
+      <h1 class="title">日志</h1>
+      <h3 class="meta-line">
+        <span>{{ partial "meta.html" . }}</span>
+      </h3>
+      </div>
+      {{ $visiblePages := where .Site.RegularPages "Params.no_archives" "ne" true }}
+      {{ $groupedByYear := $visiblePages.GroupByDate "2006" }}
+    <div class="liebiao-container">
+      {{ range $groupedByYear }}
+      <h2>{{ .Key }}</h2>
+      {{ $groupedByMonth := .Pages.GroupByDate "01" }} <!-- 按月分组 -->
+     
+      {{ range $groupedByMonth }}
+        <div class="post-list">
+        
+          {{ range .Pages }}
+            <div class="post-item">
+              <span>{{ .Date.Format "01/02" }}</span>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </div>
+          {{ end }}
+        
+        </div>
+        <div class="month-gap"></div> <!-- 每个月之间的空白分隔 -->
+        {{ end }}
+    {{ end }}
+    </div>
+  </div>
+
+<style>
+  
+  h2 {
+      font-size: 1.5rem;
+      color: #444;
+      margin-top: 20px;
+      /* border-bottom: 1px solid #eee; */
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      color: #666;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+    .post-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .post-item {
+
+      padding: 6px 10px;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .post-item:hover {
+      background-color: #f1f1f1;
+    }
+
+    .post-item span {
+      color: #999;
+      font-size: 0.9rem;
+      margin-right: 0px;
+    }
+
+    .post-item a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .post-item a:hover {
+      color: #003366;
+    }
+
+    /* 用于每个月之间的空白间隔 */
+    .month-gap {
+      height: 20px; /* 设置空白的高度 */
+      margin-top: 20px; /* 增加与下一个月的间距 */
+    }
+
+
+    /* @media screen and (max-width: 768px) {
+      
+    .liebiao-container{
+      margin-top: 4.2em;
+    } */
+
+
+    }
+
+</style>
+
+{{ end }}
+
