@@ -5,7 +5,7 @@ let category = 'all';
 
 async function fetchPoems() {
     try {
-        const response = await fetch('/poetrys.json');
+        const response = await fetch('/haoshuang/poetrys.json');
         poetry = await response.json();
          // 倒序排列，最新的内容在最前面
 poetry.reverse();
