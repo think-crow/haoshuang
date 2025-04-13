@@ -1,4 +1,4 @@
-baseurl = "https://github.com/think-crow/haoshuang"
+baseurl = "https://think-crow.github.io/"
 title = "HaoShuang"
 # themesDir = "../../"
 theme = ["whiteplain"]
