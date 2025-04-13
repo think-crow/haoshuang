@@ -1,4 +1,4 @@
-baseurl = "http://localhost:1313/"
+baseurl = "https://github.com/think-crow/haoshuang"
 title = "HaoShuang"
 # themesDir = "../../"
 theme = ["whiteplain"]
