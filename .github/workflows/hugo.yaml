@@ -91,3 +91,25 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # 讨论评论通知任务
+  discussion-notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 发送邮件通知
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: 新评论通知
+          body: |
+            你的网站有新的评论！
+            
+            评论者: ${{ github.event.comment.user.login || github.event.discussion.user.login }}
+            内容: ${{ github.event.comment.body || github.event.discussion.body }}
+            
+            链接: ${{ github.event.comment.html_url || github.event.discussion.html_url }}
+          to: ${{ secrets.MAIL_TO }}
+          from: Blog Notification <${{ secrets.MAIL_FROM }}>

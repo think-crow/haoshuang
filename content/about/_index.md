@@ -37,7 +37,7 @@ author = " 任豪爽"
 2024年4月19日有了自己的初版博客网站，域名：rwany.net， 命名为：十三分地  
 2025年4月19日将上述内容迁移至hugo，域名：haoshuang.org  妄图以一个博客来打造一个人的一生。
 
-采用hugo框架搭建，[Whiteplain](https://whiteplain.pages.dev/)主题，样式多抄袭于[他]([yihui.org](https://yihui.org/))，域名注册[参考此处](https://github.com/yihui/yihui.org/discussions/886)，字体[参考此处](https://yihui.org/cn/2017/04/source-han-serif/)，本着域名越短越好的原则，想注册shuang.org，发现已被人注册去也（后查到注册人：朱爽，可惜没看到她的网站），而haoshuang.org竟未注册，遂快马加鞭拿下，缘分，缘分呐！ 
+采用hugo框架搭建，[Whiteplain](https://whiteplain.pages.dev/)主题，样式多抄袭于[他](https://yihui.org/)，域名注册[参考此处](https://github.com/yihui/yihui.org/discussions/886)，字体[参考此处](https://yihui.org/cn/2017/04/source-han-serif/)，本着域名越短越好的原则，想注册shuang.org，发现已被人注册去也（后查到注册人：朱爽，可惜没看到她的网站），而haoshuang.org竟未注册，遂快马加鞭拿下，缘分，缘分呐！ 
    
 如果你采取github托管，不建议注册国内域名，否则指向GitHub，运营商会暂停你的解析。
 
