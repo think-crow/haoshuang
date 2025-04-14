@@ -1,4 +1,4 @@
-baseurl = "https://think-crow.github.io/haoshuang/"
+baseurl = "https://haoshuang.vercel.app/"
 title = "HaoShuang"
 # themesDir = "../../"
 theme = ["whiteplain"]
