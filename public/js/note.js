@@ -10,7 +10,7 @@ async function fetchData() {
   document.getElementById('loading').style.display = 'flex';
 
   try {
-    const response = await fetch('/haoshuang/notepapers.json');
+    const response = await fetch('/notepapers.json');
     const result = await response.json();
 
     // 数据倒序排列

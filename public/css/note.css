@@ -18,19 +18,21 @@
   }
   
   .paper-text p{
-    color: #d5d5d6;
+    color: #333;
+    font-size: .98em;
   }
   
   .n-card {
     margin-top: 1em;
-    padding: 1em;
-    border: 1px solid #ddd;
-    background-color: #28282b;
-    box-shadow: 0 2px 5px rgb(65, 61, 61);
+    padding: .5em;
+    /* border: 1px solid #ddd; */
+    /* background-color: #28282b; */
+    box-shadow: 0 .5px 2px rgb(65, 61, 61);
   }
   
   .submitdate {
     color: rgba(169, 164, 157, 0.658);
+    font-size: .9em;
   }
   
   .gsc-loading {
