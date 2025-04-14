@@ -79,6 +79,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      - name: Debug GitHub Event
+        run: echo "${{ toJson(github.event) }}"
 
   # Deployment job
   deploy:
@@ -111,5 +113,6 @@ jobs:
             内容: ${{ github.event.comment.body || github.event.discussion.body }}
             
             链接: ${{ github.event.comment.html_url || github.event.discussion.html_url }}
+          Debug info: ${{ github.event | toJson }}
           to: ${{ secrets.MAIL_TO }}
           from: Blog Notification <${{ secrets.MAIL_FROM }}>
