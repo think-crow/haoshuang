@@ -1,0 +1,16 @@
+{
+    "redirects": [
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "host",
+            "value": "haoshuang.org"
+          }
+        ],
+        "destination": "https://www.haoshuang.org/$1",
+        "permanent": true
+      }
+    ]
+  }
+  

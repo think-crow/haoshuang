@@ -4,7 +4,7 @@ url: "/poetry/"
 type: "poetry"
 no_archives: true
 outputs: ["HTML"] 
-date: '2017-12-28'
+date: '2024-04-19'
 css:
   - "poetry.css"
 js:
