@@ -86,6 +86,58 @@
   <div class="main" role="main">
     <section class="list section-list">
       <article class="article">
+        <a href="/posts/2024/05/06/9531/" class="article-titles">
+          <h1 class="article-title">碰到问题及解决方法</h1>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>May 6, 2024</time></li>
+          <li class="article-meta-tags">
+            <a href="/tags/reference_2/">
+              <i class="fa-solid fa-tag"></i>
+              reference_2
+            </a>&nbsp;
+          </li>
+        </ul>
+        <div class="article-content">
+          <p>1、mysql数据库文件怎么导入mongodb数据库。
+navicat(sql版本)先导入sql文件，再导出为csv格式  然后再用navicat(mongodb版本)导入刚刚的csv文件即可。</p>
+<blockquote>
+<p>注意导出之前要先更换默认导出文件夹。</p>
+</blockquote>
+<p>2、mongodb数据迁移之后，根据_id访问不到数据。</p>
+<blockquote>
+<p>导入数据类型错误：用navicate导入数据时：_id参数的类型改为Object。</p>
+</blockquote>
+<p>3、ifame嵌入html文件不显示问题。</p>
+<blockquote>
+<p>html文件不要随vite打包，把文件放在服务器直接路径访问即可！</p>
+</blockquote>
+<p>4、开发时vue3请求服务器失败。</p>
+<blockquote>
+<p>跨域问题：vite设置代理即可。</p>
+</blockquote>
+<p>5、网页的文章添加功能怎么实现的。</p>
+<blockquote>
+<p>大多用户富文本编辑器（富文本编辑器原理：直接生成html代码，前端只负责插入到页面即可）。</p>
+</blockquote>
+<p>6、naive-ui怎么修改组件样式。</p>
+<blockquote>
+<p>可以直接 .组件名  可以用vue3的v-deep修改（F12找到样式名 不能修改就用v-deep）。</p>
+</blockquote>
+<p>7、loading加载。</p>
+<blockquote>
+<p>两种方式：可以放在组件加载前后。     可以放在axios请求响应拦截之前后。</p>
+</blockquote>
+<p>8、npm安装包时证书过期问题。</p>
+<blockquote>
+<p>1忽略证书：  npm install <a href="mailto:color-convert@1.9.3">color-convert@1.9.3</a> &ndash;strict-ssl=false     备注：color-convert@1.9.3  这个是包名<br>
+2设置npm所有忽略证书验证  npm config set strict-ssl false</p>
+        </div>
+        <div class="article-readmore"><a href="/posts/2024/05/06/9531/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+      <article class="article">
         <a href="/posts/2024/04/29/9529/" class="article-titles">
           <h1 class="article-title">访问网站注意事项</h1>
           
