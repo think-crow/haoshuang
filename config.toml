@@ -124,7 +124,7 @@ copyright = "&copy; Copyright 2024 - 2025"
 
 
 [permalinks]
-  posts = "/:year/:month/:day/:slug/"
+  posts = "/posts/:year/:month/:day/:slug/"
 
 [caches]
   [caches.images]
