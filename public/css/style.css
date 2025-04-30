@@ -59,9 +59,10 @@ pre, code {
 }
 pre {
   padding: 4px 8px;
+  white-space: pre-wrap; /* 保留空格，但允许换行 */
 }
 :not(pre) > code {
-  padding: 2px 4px;
+  padding: 2px 8px;
   margin: 0 2px;
 }
 blockquote {

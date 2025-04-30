@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   
@@ -51,7 +51,7 @@
   
   <meta name="author" content="任豪爽"/>
   <meta property="og:site_name" content="Haoshuang Ren | 任豪爽" />
-  <meta property="og:url" content="http://localhost:1313/posts/2024/05/06/9531/" />
+  <meta property="og:url" content="https://haoshuang.vercel.app/posts/2024/05/06/9531/" />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.134.1">
@@ -233,6 +233,12 @@ navicat(sql版本)先导入sql文件，再导出为csv格式  然后再用navica
 <p>27、字体更新后，jsdelivr没有更新，仍旧缓存的旧文件，清除缓存方法：</p>
 <blockquote>
 <p>上述例子中,https://cdn.jsdelivr.net 替换为 <a href="https://purge.jsdelivr.net">https://purge.jsdelivr.net</a>即可。</p>
+</blockquote>
+<h4 id="2025-04-26">2025-04-26</h4>
+<p>28、vue3代理vercel的后端地址失效：</p>
+<blockquote>
+<p>Vercel dev 的 3000端口不是常规 Node 服务，Vite 代理无效，必须直接访问.<br>
+vercel dev 起的本地服务 并不是普通的 Node 服务器，而是Serverless模拟器。这种模式下，vercel dev自己拦截了API请求,不会真的在 localhost:3000 提供传统 HTTP API 服务。！</p>
 </blockquote>
 <p>最后：思考工作或人生是不是也可以这样！</p>
 

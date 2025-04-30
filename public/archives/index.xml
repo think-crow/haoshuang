@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日志 on Haoshuang Ren | 任豪爽</title>
-    <link>http://localhost:1313/archives/</link>
+    <link>https://haoshuang.vercel.app/archives/</link>
     <description>Recent content in 日志 on Haoshuang Ren | 任豪爽</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <copyright>&amp;copy; Copyright 2024 - 2025</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/archives/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://haoshuang.vercel.app/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

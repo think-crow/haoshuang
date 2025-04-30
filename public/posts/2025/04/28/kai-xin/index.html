@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  
+  
+  
+
+  
+  
+  <title>兴奋至极 - Haoshuang Ren | 任豪爽</title>
+  <meta property="og:title" content="兴奋至极 - Haoshuang Ren | 任豪爽">
+  
+  <meta name="twitter:card" content="summary">
+
+  
+      
+      <meta property="description" content="
+
+
+
+  
+  
+  
+
+本篇博客为登录后在网页端添加的md文档，后台完工正常使用，甚是开心。
+开心的时光总是很短暂，心情平复之后，决定记录一下此刻，及简要一下过程。写着写着老习惯点Ctrl &#43; c ，注意已经不是本地了，哈哈。
+原本打算是不在本博客讲技术的，今天的日子很难得，刚刚大眼一看：已经凌晨零点零四分了，看来是难得的两天，哈哈。
+自己的第一版博客是vue3写的，数据都在mongodb数据库里面保存，搬迁过程碰到的一...
+">
+      <meta property="og:description" content="
+
+
+
+  
+  
+  
+
+本篇博客为登录后在网页端添加的md文档，后台完工正常使用，甚是开心。
+开心的时光总是很短暂，心情平复之后，决定记录一下此刻，及简要一下过程。写着写着老习惯点Ctrl &#43; c ，注意已经不是本地了，哈哈。
+原本打算是不在本博客讲技术的，今天的日子很难得，刚刚大眼一看：已经凌晨零点零四分了，看来是难得的两天，哈哈。
+自己的第一版博客是vue3写的，数据都在mongodb数据库里面保存，搬迁过程碰到的一...
+">
+      
+    
+    
+
+  
+  <meta name="author" content="任豪爽"/>
+  <meta property="og:site_name" content="Haoshuang Ren | 任豪爽" />
+  <meta property="og:url" content="https://haoshuang.vercel.app/posts/2025/04/28/kai-xin/" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.134.1">
+  <link rel="stylesheet" href="/css/style.css" media="all" />
+  <link rel="stylesheet" href="/css/style-dark.css" media="all and (prefers-color-scheme: dark)" />
+
+  <link rel="stylesheet" href="/css/syntax.css" media="all" />
+  <link rel="stylesheet" href="/css/custom.css" media="all" />
+  
+
+
+  <script src="/js/script.js"></script>
+  <script src="/js/custom.js"></script>
+  
+  <script defer src="/fontawesome/all.min.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-navi">
+    <h1 class="site-title"><a href="/">HaoShuang</a></h1>
+    
+    
+    <ul class="site-navi-items">
+      <li class="site-navi-item-archives"><a href="/archives/" title="日志">日志</a></li>
+      <li class="site-navi-item-poetry"><a href="/poetry/" title="诗集">诗集</a></li>
+      <li class="site-navi-item-note"><a href="/note/" title="便笺">便笺</a></li>
+      <li class="site-navi-item-about"><a href="/about/" title="关于">关于</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="site-header-bottom">
+
+  <div class="main" role="main">
+
+    <div class="article-meta">
+      <h1 class="title">兴奋至极</h1>
+      <h3 class="meta-line">
+        <span>
+
+
+
+
+
+
+<span class="date">2025-04-28</span>
+
+
+</span>
+      </h3>
+      </div>
+
+    
+      
+    <article class="article">
+
+      <ul class="article-meta">
+        <li class="article-meta-date"><time>April 28, 2025</time></li>
+      </ul>
+      
+      <p>本篇博客为登录后在网页端添加的md文档，后台完工正常使用，甚是开心。</p>
+<p>开心的时光总是很短暂，心情平复之后，决定记录一下此刻，及简要一下过程。写着写着老习惯点<code>Ctrl + c</code> ，注意已经不是本地了，哈哈。</p>
+<p>原本打算是不在本博客讲技术的，今天的日子很难得，刚刚大眼一看：已经凌晨零点零四分了，看来是难得的两天，哈哈。</p>
+<p>自己的第一版博客是vue3写的，数据都在mongodb数据库里面保存，搬迁过程碰到的一些问题：</p>
+<ul>
+<li>json文件转md：让Gpt生成的node.js代码，细节改一下很好用。</li>
+<li>诗集和便笺页面：直接请求的导出的json数据，在后台实现增删改查，因为自己要随时添加便笺，登录修改功能还真不行。</li>
+<li>后台页面是拿之前设计好的后台改的，用到了naive-ui的组件库，不得不说别人的东西就是漂亮。</li>
+</ul>
+<p><a href="https://github.com/think-crow/haoshuang-node">后台</a>的制作过程：</p>
+<ul>
+<li>1、刚开始让Gpt做了一个简单的本地添加json数据的页面，偶然间得知了<a href="https://vercel.com/docs/functions">vercel的无服务器函数</a>，刚好去年简单学过node，可以着手实现一下。</li>
+<li>2、开始第一天，超级顺利（不过是傻乎乎的用fs操作的文件：以为给vercel授权之后可以直接用fs操作文件流）。</li>
+<li>3、发现线上操作不了文件，不开心的卡了两天后，了解到Github-Api，着手尝试，发现可以，非常nice。</li>
+<li>4、<strong>给出代码-出现错误-不断排查</strong>，循环了不知多少次后，后台代码完工。</li>
+</ul>
+<p>得出了一个结论：人总是会在已知的经验内考虑事情，办法往往会很难想出来。如果能扩展更多的知识面，是否解决问题的方式会越来越快。</p>
+<p>找到清晰的路径，剩余的就是一点点的完善、努力。哪一步做到什么、完成什么？</p>
+<p>写道这里，再看下标题，真的是那一刻的心情啊！用自己手搓出来的东西，感觉是真不错！</p>
+<p>在页面写的好处是，换行可以直接换行，不用敲两个空格。缩进要不要调圆角空格还没试验，应该也是可以的，这一段试一下（我半角缩进了两个空格）。</p>
+<p>以后要专心写博客了，加油，少年！</p>
+<p>&hellip;30 minutes later<br>
+刚想说：”看着这：&ldquo;Markdown file created successfully&rdquo; 的提示语真开心，回来再添加上一句，没想到后脚点击修改按钮就报错了。</p>
+<p>可以到vercel-Logs-Deployment-选中部署链接，错误信息就出来了。原来是逻辑问题，已经订正！</p>
+
+    </article>
+
+    
+
+    <ul class="pager article-pager">
+      <li class="pager-newer">
+          <a href="/posts/2025/04/30/difference-network/" data-toggle="tooltip" data-placement="top" title="网络">&lt; Newer</a>
+      </li>
+      <li class="pager-older">
+        <a href="/posts/2025/04/26/example/" data-toggle="tooltip" data-placement="top" title="关于偶像">Older &gt;</a>
+      </li>
+    </ul>
+    
+
+
+<section class="comments">
+<script src="https://giscus.app/client.js"
+data-repo="think-crow/haoshuang"
+data-repo-id="R_kgDONoIvZQ"
+data-category="General"
+data-category-id="DIC_kwDONoIvZc4Co7NY"
+data-mapping="pathname"
+data-strict="1"
+data-reactions-enabled="1"
+data-emit-metadata="0"
+data-input-position="bottom"
+data-theme="preferred_color_scheme"
+data-lang="zh-CN"
+data-loading="lazy"
+crossorigin="anonymous"
+        defer>
+</script>
+
+</section>
+
+  </div>
+
+
+<div class="site-footer">
+  <div class="copyright">&copy; Copyright 2024 - 2025</div>
+  <ul class="site-footer-items">
+    <li class="site-footer-item-about"><a href="/about/" title="About">About</a></li>
+    <li class="site-footer-item-categories"><a href="/categories/" title="Categories">Categories</a></li>
+    <li class="site-footer-item-tags"><a href="/tags/" title="Tags">Tags</a></li>
+  </ul>
+  <div class="powerdby">
+    Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/taikii/whiteplain">Whiteplain</a>
+  </div>
+</div>
+
+
+</body>
+</html>
