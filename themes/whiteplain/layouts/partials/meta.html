@@ -1,4 +1,4 @@
-{{ if .IsPage }}
+<!-- {{ if .IsPage }}
 {{ with or (or .Params.author (index (or .Site.Params.author dict) .Section)) "" }}
 <span class="author">{{ . }}</span>
 {{ end }}
@@ -13,4 +13,22 @@
 {{ with $date }}
 <span class="date">{{ . }}</span>
 {{ end }}
+{{ end }} -->
+{{ if or .IsPage (eq .Section "jianli") }}
+
+  {{ $author := or .Params.author (index (or .Site.Params.author dict) .Section) }}
+  {{ with $author }}
+    <span class="author">{{ . }}</span>
+  {{ end }}
+
+  {{ $date := "" }}
+  {{ if .Params.date }}
+    {{ $date = .Date.Format "2006-01-02" }}
+  {{ else if .Lastmod }}
+    {{ $date = .Lastmod.Format "2006-01-02" }}
+  {{ end }}
+  {{ with $date }}
+    <span class="date">{{ . }}</span>
+  {{ end }}
+
 {{ end }}

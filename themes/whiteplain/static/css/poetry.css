@@ -17,9 +17,6 @@
     align-items: stretch; /* 使卡片等高 */
   }
   
-  
-  
-  
   .poetry-card{
     width: calc(100% - 20px); /* 每行最多展示 3 个卡片，考虑间隙 */
     /* max-width: 724px; */

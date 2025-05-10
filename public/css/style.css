@@ -342,21 +342,33 @@ h1.title::before {
 }
 
 .toc {
-  float: right;
-  padding: 4px;
+  /* float: right; */
+
+  padding: .5em;
   margin: 0;
   margin-left: 10px;
   margin-bottom: 10px;
   border: solid 1px lightgray;
+  background-color: #f9f9f9;
+}
+
+.toc a{
+  color: #000000;
+  /* border: 1px solid red; */
+}
+.toc a:hover {
+  color: #0024b5;
 }
 .toc ul {
-  list-style-type: none;
+  /* list-style-type: none; */
+  /* border: 1px solid red; */
   padding: 0;
   padding-left: 12px;
   margin: 0;
 }
 .toc nav > ul {
-  padding-left: 0;
+  /* border: 1px solid red; */
+  padding-left: 1.5em;
 }
 
 /* pager */
