@@ -25,8 +25,8 @@ js:
 ---
 
 Github：[think-crow](https://github.com/think-crow)  
-邮箱：ren@haoshuang.org;    
-主页：[https:www.haoshuang.org](https:www.haoshuang.org)  
+邮箱：ren@haoshuang.org    
+主页：[https://www.haoshuang.org](https://www.haoshuang.org)  
 
 
 现居住在湖北武汉。
@@ -39,7 +39,7 @@ Github：[think-crow](https://github.com/think-crow)
 ##  工作经历
 ---
 2017.08-2018.05 深圳智微智能科技有限公司，项目助理  
-2018.09-2020.09 入伍参军 (陆军81集团军，162旅)  
+2018.09-2020.09 入伍参军，陆军81集团军-合成第162旅  
 2020.10-2021.06 郑州微智能研究院，测试技术员  
 2021.10-2023.07 郑州中音讯谷科技有限公司，售后技术支持   
 2023.07-至今 自由职业，现谋求一份稳定的工作。  
@@ -56,11 +56,11 @@ Github：[think-crow](https://github.com/think-crow)
   - 会议录播：简易录播、视像跟踪。
   - 教育录播：学生特写、全景，教师特写、全景，板书画面。
 - 无纸化会议系列（调试居多）  
-  - 桌面无纸化
-  - [平板无纸化](#modal-hb9) 
-  - [国产无纸化（麒麟系统）](#modal-hb10) 
-  - 中控：采取rs232、rs485、网络控制方式
-  - 智能管理平台：集成音频矩阵、视频矩阵、中控、控制界面一体。
+  - 桌面无纸化。
+  - [平板无纸化。](#modal-hb9) 
+  - [国产无纸化（麒麟系统）。](#modal-hb10) 
+  - 中控：采取rs232、rs485、网络控制方式。
+  - 智能管理平台：集音频矩阵、视频矩阵、中控、显示界面一体。
 - 视频会议系列  
   - 软件视频会议：单摄像机+音频系统+其他会议平台，专线+服务器多点接入。
   - 硬件视频会议（调试少）
@@ -69,7 +69,7 @@ Github：[think-crow](https://github.com/think-crow)
   **相关辅助性技能：**  
   线材焊接、安装系统、基础编程知识、4年C1驾龄。
   
-## 主要项目经历  
+## 部分项目经历  
 ---
 [郑州国家电网中控音频项目](https://www.zyxgkj.com/newsinfo/4551709.html)   
 [平顶山宝丰县人武部无纸化项目](https://www.zyxgkj.com/newsinfo/2437276.html)  
