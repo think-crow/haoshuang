@@ -7,6 +7,17 @@
     
 margin: 2em 0 1em;
 }
+
+.img-loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #888;
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+
 .modal {
   display: none; /* 控制显示隐藏时用 JS 设置 */
   position: fixed;
