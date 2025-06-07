@@ -9,6 +9,11 @@ a {
 a:hover, a:active {
   color: #80d0ff;
 }
+
+.post-item a {
+  color: #ffffff;
+
+}
 pre, code {
   background-color: inherit;
 }

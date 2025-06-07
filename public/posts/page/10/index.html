@@ -46,7 +46,7 @@
   <meta property="og:url" content="http://localhost:1313/posts/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
-  <meta name="generator" content="Hugo 0.134.1">
+  <meta name="generator" content="Hugo 0.129.0">
   <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Haoshuang Ren | 任豪爽" />
   <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Haoshuang Ren | 任豪爽" />
   <link rel="stylesheet" href="/css/style.css" media="all" />
@@ -85,6 +85,119 @@
   </div>
   <div class="main" role="main">
     <section class="list section-list">
+      <article class="article">
+        <a href="/posts/2024/05/11/9535/" class="article-titles">
+          <h1 class="article-title">推荐书籍</h1>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>May 11, 2024</time></li>
+          <li class="article-meta-tags">
+            <a href="/tags/blog_1/">
+              <i class="fa-solid fa-tag"></i>
+              blog_1
+            </a>&nbsp;
+          </li>
+        </ul>
+        <div class="article-content">
+          <p>以前的自己看书总是没有选择，网络内容又驳杂，在这里作者推荐喜欢的书给大家（突然一想。好像有书影栏目了 …</p>
+        </div>
+        <div class="article-readmore"><a href="/posts/2024/05/11/9535/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+      <article class="article">
+        <a href="/posts/2024/05/06/9533/" class="article-titles">
+          <h1 class="article-title">一些想法</h1>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>May 6, 2024</time></li>
+          <li class="article-meta-tags">
+            <a href="/tags/blog_1/">
+              <i class="fa-solid fa-tag"></i>
+              blog_1
+            </a>&nbsp;
+          </li>
+        </ul>
+        <div class="article-content">
+          <p>1、人生咨询网站（大多都没有方向 人生规划）</p>
+<p>2、思想启蒙</p>
+<p>3、网站优化<br>
+文章带图片的说明  文字记 …</p>
+        </div>
+        <div class="article-readmore"><a href="/posts/2024/05/06/9533/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+      <article class="article">
+        <a href="/posts/2024/05/06/9531/" class="article-titles">
+          <h1 class="article-title">碰到问题及解决方法</h1>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>May 6, 2024</time></li>
+          <li class="article-meta-tags">
+            <a href="/tags/reference_2/">
+              <i class="fa-solid fa-tag"></i>
+              reference_2
+            </a>&nbsp;
+          </li>
+        </ul>
+        <div class="article-content">
+          1、mysql数据库文件怎么导入mongodb数据库。 navicat(sql版本)先导入sql文件，再导出为csv格式 然后再用navicat(mongodb版本)导入刚刚的csv文件即可。
+注意导出之前要先更换默认导出文件夹。
+2、mongodb数据迁移之后，根据_id访问不到数据。
+导入数据类型错误：用navicate导入数据时：_id参数的类型改为Object。
+3、ifame嵌入html文件不显示问题。
+html文件不要随vite打包，把文件放在服务器直接路径访问即可！
+4、开发时vue3请求服务器失败。
+跨域问题：vite设置代理即可。
+5、网页的文章添加功能怎么实现的。
+大多用户富文本编辑器（富文本编辑器原理：直接生成html代码，前端只负责插入到页面即可）。
+6、naive-ui怎么修改组件样式。
+可以直接 .组件名 可以用vue3的v-deep修改（F12找到样式名 不能修改就用v-deep）。
+7、loading加载。
+两种方式：可以放在组件加载前后。 可以放在axios请求响应拦截之前后。
+8、npm安装包时证书过期问题。
+1忽略证书： npm install color-convert@1.9.3 &ndash;strict-ssl=false 备注：color-convert@1.9.3 这个是包名
+2设置npm所有忽略证书验证 npm config set strict-ssl false
+9、windows server端口占用。
+查看所有端口：netstat -ano 终结被占用的端口：taskkill /F /PID 8628
+10、怎么实现页面滑到底部，自动加载内容。
+将数据保存在数组里面，监视页面到底部就访问后台获取数据，再追加进去就可以。
+11、nginx怎么部署两个vue（可以监听不同端口进行访问）。
+前端页面默认443、80端口，默认设置即可。
+后台可从新开一个端口监听访问（注意服务器安全组策略也要开放这个端口）。
+12、vue3怎么增加404。
+在路由文件index.js中新增一个路由导航到你那个404文件就行了！
+13、登录功能实现流程：
+用户在前端提交登录表单（用户名和密码）。- - 后端接收到请求，使用中间件检查请求头中的 Authorization 字段是否携带有效的令牌（通常是为了确保用户未重复登录）。- - 后端查找用户记录，使用 bcrypt 比较提交的密码与存储的哈希密码。- - 如果密码匹配，生成新的 JWT 令牌。- - 将生成的 JWT 令牌返回给前端，前端保存该令牌以供后续使用。
+14、注册功能实现流程：（gpt提示jwe生成token更安全，后续完善后再研究）。
+用户在前端提交注册表单（用户名、密码等）。- - 后端接收到请求，验证提交的注册信息是否满足条件（如用户名唯一、密码格式等）。- - 使用 bcrypt 对用户密码进行加密处理。- - 保存加密后的密码和其他用户数据到数据库中。- - 根据需要，生成并返回一个 JWT 令牌给前端，前端保存该令牌用于后续的身份验证。-
+        </div>
+        <div class="article-readmore"><a href="/posts/2024/05/06/9531/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+      <article class="article">
+        <a href="/posts/2024/04/29/9529/" class="article-titles">
+          <h1 class="article-title">访问网站注意事项</h1>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>April 29, 2024</time></li>
+          <li class="article-meta-tags">
+            <a href="/tags/blog_1/">
+              <i class="fa-solid fa-tag"></i>
+              blog_1
+            </a>&nbsp;
+          </li>
+        </ul>
+        <div class="article-content">
+          <p>访问最好用电脑、谷歌浏览器；其他浏览器可能页面不会显示（这里真应该来个浏览器界的秦始皇）</p>
+<p>1、网站采 …</p>
+        </div>
+        <div class="article-readmore"><a href="/posts/2024/04/29/9529/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
       <article class="article">
         <a href="/posts/2024/04/02/9527/" class="article-titles">
           <h1 class="article-title">网站暂存问题</h1>
@@ -143,6 +256,8 @@
 
 
 
+
+
 <div class="site-footer">
   <div class="copyright">&copy; Copyright 2024 - 2025</div>
   <ul class="site-footer-items">
@@ -159,6 +274,10 @@
     Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/taikii/whiteplain">Whiteplain</a>
   </div>
 </div>
+
+  
+
+
 
 
 </body>

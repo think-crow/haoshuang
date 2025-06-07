@@ -4,6 +4,9 @@
 <body>
 {{ partial "header.html" . }}
 {{ block "main" . }}{{ end }}
+<!-- {{ partial "footer.html" . }} -->
+{{ if not (eq .Section "jianli") }}
 {{ partial "footer.html" . }}
+{{ end }}
 </body>
 </html>

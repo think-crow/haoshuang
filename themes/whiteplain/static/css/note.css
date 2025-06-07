@@ -18,7 +18,7 @@
   }
   
   .paper-text p{
-    color: #333;
+    /* color: #333; */
     font-size: .98em;
   }
   
@@ -65,14 +65,15 @@
   }
 
   .n-card {
-    padding: 0em;
-    margin: 1em -.4em 8px -.4em;
-    background-color: #ffffff;
-    box-shadow: 0 1px 2px rgb(65, 61, 61);
+    padding: .3em;
+    margin: 1em 0em 8px 0em;
+    /* margin: 0; */
+    /* background-color: #ffffff; */
+    box-shadow: 0 .5px 2px rgb(153, 145, 145);
   }
     
   .paper-text p{
-    color: #28282b;
+    /* color: #28282b; */
   }
 
   .paper-text {
