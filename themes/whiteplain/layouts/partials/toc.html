@@ -1,5 +1,12 @@
-
+<!-- 
 {{- if or .Params.toc (and (gt .WordCount 400 ) (ne .Params.toc "false")) }}
+<aside class="toc">
+  {{ .TableOfContents }}
+</aside>
+{{- end }} -->
+
+{{- $showtoc := or (eq .Params.toc true) (and (not (eq .Params.toc false)) (gt .WordCount 400)) }}
+{{- if $showtoc }}
 <aside class="toc">
   {{ .TableOfContents }}
 </aside>
