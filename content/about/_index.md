@@ -1,9 +1,9 @@
 +++
 title = "关于"
-description = "关于我，关于网站，联系方式"
+description = "任豪爽的个人博客，记录人生感悟与自我成长。"
 date = "2025-04-12"
-aliases = ["about-us", "about-hugo", "contact"]
-author = " 任豪爽"
+aliases = ["about-us", "contact", "haoshuang"]
+author = "任豪爽"
 +++
 
 有缘人，你好！  
@@ -44,8 +44,8 @@ author = " 任豪爽"
 
 
 # 楞中博客：
-* [益辉大哥](https://yihui.org/)：接地气的科学家，引路人。
-* [列弛二哥](https://www.liechi.org/)：要我是小姐姐，都想嫁给他了，要多看他文章，悟得吸引小姐姐的文风，半身像很帅。
+* [谢益辉](https://yihui.org/)：接地气，引路文。
+* [列弛](https://www.liechi.org/)：要我是小姐姐，都想嫁给他了，要多看他文章，悟得吸引小姐姐的文风，半身像很帅。
 * [保罗·格雷厄姆（Paul Graham）](https://www.paulgraham.com/) 黑客与画家的作者，不经意间刷到他的博客，给我惊喜了下。
 
 网站：
