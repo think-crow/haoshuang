@@ -12,7 +12,7 @@
 {{ else }}
   {{ $content := .Content | replaceRE "<h1.*?>.*?</h1>" "" | replaceRE "<h2.*?>.*?</h2>" "" }}
   {{ $content = $content | plainify }}
-  {{ $summary = $content | truncate 200 "..." }}
+  {{ $summary = $content | truncate 100 "..." }}
 {{ end }}
 {{ $summary }}
 

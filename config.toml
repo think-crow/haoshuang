@@ -134,3 +134,10 @@ copyright = "&copy; Copyright 2024 - 2025"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# 站点地图，方便百度收录。
+[sitemap]
+  filename = "sitemap.xml"
+  changefreq = "weekly"
+  priority = 0.5
+
