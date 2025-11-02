@@ -1,0 +1,40 @@
+name: Hugo Build & Baidu Push
+
+on:
+  push:
+    branches:
+      - main   # 或 master，看你仓库分支名
+  workflow_dispatch:
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.129.0' # 用你的版本
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Generate URLs list from sitemap
+        run: |
+          grep -oP '(?<=<loc>).*?(?=</loc>)' public/sitemap.xml > urls.txt
+          echo "生成 URL 列表成功，共 $(wc -l < urls.txt) 条"
+
+      - name: Push URLs to Baidu
+        env:
+          BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+          SITE_URL: https://www.haoshuang.org
+        run: |
+          echo "开始推送到百度..."
+          curl -H 'Content-Type:text/plain' --data-binary @urls.txt \
+          "http://data.zz.baidu.com/urls?site=${SITE_URL}&token=${BAIDU_TOKEN}"
+
+      - name: Done
+        run: echo "✅ Hugo 构建 + 百度推送 完成"
