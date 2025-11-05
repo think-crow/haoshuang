@@ -26,11 +26,15 @@ jobs:
         run: |
           grep -oP '(?<=<loc>).*?(?=</loc>)' public/sitemap.xml > urls.txt
           echo "生成 URL 列表成功，共 $(wc -l < urls.txt) 条"
+          echo "以下为生成的 URL 列表内容："
+          echo "----------------------------------"
+          cat urls.txt
+          echo "----------------------------------"
 
       - name: Push URLs to Baidu
         env:
           BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
-          SITE_URL: https://www.haoshuang.org
+          SITE_URL: www.haoshuang.org
         run: |
           echo "开始推送到百度..."
           curl -H 'Content-Type:text/plain' --data-binary @urls.txt \
