@@ -45,8 +45,8 @@ jobs:
           echo "开始测试百度推送接口..."
           echo "----------------------------------"
           
-          # 取第一行 URL 作为测试
-          head -n 1 urls.txt > test_url.txt
+        # 取第一行 URL 作为测试
+          head -n 8 urls.txt > test_url.txt
           echo "测试推送的 URL："
           cat test_url.txt
           echo "----------------------------------"
