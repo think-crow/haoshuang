@@ -36,43 +36,41 @@ jobs:
           echo "(以上为前 10 条)"
           echo "----------------------------------"
 
- # 5️⃣ 检查百度推送接口配额 + 测试推送 1 条 URL- name: Check Baidu quota and test push
-    env:
-      BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
-      SITE_URL: https://www.haoshuang.org
-    run: |
-      echo "开始测试百度推送接口..."
-      echo "----------------------------------"
-      
-    # 取第一行 URL 作为测试
-      head -n 8 urls.txt > test_url.txt
-      echo "测试推送的 URL："
-      cat test_url.txt
-      echo "----------------------------------"
+      # 5️⃣ 检查百度推送接口配额 + 测试推送 1 条 URL
+      - name: Check Baidu quota and test push
+        env:
+          BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+          SITE_URL: https://www.haoshuang.org
+        run: |
+          echo "开始测试百度推送接口..."
+          echo "----------------------------------"
+          
+          head -n 8 urls.txt > test_url.txt
+          echo "测试推送的 URL："
+          cat test_url.txt
+          echo "----------------------------------"
 
-      # 执行推送并保存响应
-      RESPONSE=$(curl -s -H 'Content-Type:text/plain' --data-binary @test_url.txt \
-      "http://data.zz.baidu.com/urls?site=${SITE_URL}&token=${BAIDU_TOKEN}")
+          RESPONSE=$(curl -s -H 'Content-Type:text/plain' --data-binary @test_url.txt \
+          "http://data.zz.baidu.com/urls?site=${SITE_URL}&token=${BAIDU_TOKEN}")
 
-      echo "百度返回结果："
-      echo "$RESPONSE"
-      echo "----------------------------------"
+          echo "百度返回结果："
+          echo "$RESPONSE"
+          echo "----------------------------------"
 
-      # 尝试从返回的 JSON 中提取结果
-      if echo "$RESPONSE" | grep -q '"success"'; then
-        SUCCESS=$(echo "$RESPONSE" | grep -oP '(?<="success":)\d+')
-        REMAIN=$(echo "$RESPONSE" | grep -oP '(?<="remain":)\d+')
-        echo "✅ 成功推送：$SUCCESS 条"
-        echo "💾 今日剩余额度：$REMAIN 条"
-      elif echo "$RESPONSE" | grep -q '"error"'; then
-        ERROR_CODE=$(echo "$RESPONSE" | grep -oP '(?<="error":)\d+')
-        MESSAGE=$(echo "$RESPONSE" | grep -oP '(?<="message":")[^"]+')
-        echo "❌ 推送失败，错误代码：$ERROR_CODE"
-        echo "原因：$MESSAGE"
-      else
-        echo "⚠️ 未识别的返回格式："
-        echo "$RESPONSE"
-      fi
+          if echo "$RESPONSE" | grep -q '"success"'; then
+            SUCCESS=$(echo "$RESPONSE" | grep -oP '(?<="success":)\d+')
+            REMAIN=$(echo "$RESPONSE" | grep -oP '(?<="remain":)\d+')
+            echo "✅ 成功推送：$SUCCESS 条"
+            echo "💾 今日剩余额度：$REMAIN 条"
+          elif echo "$RESPONSE" | grep -q '"error"'; then
+            ERROR_CODE=$(echo "$RESPONSE" | grep -oP '(?<="error":)\d+')
+            MESSAGE=$(echo "$RESPONSE" | grep -oP '(?<="message":")[^"]+')
+            echo "❌ 推送失败，错误代码：$ERROR_CODE"
+            echo "原因：$MESSAGE"
+          else
+            echo "⚠️ 未识别的返回格式："
+            echo "$RESPONSE"
+          fi
 
       # 6️⃣ 完成提示
       - name: Done
