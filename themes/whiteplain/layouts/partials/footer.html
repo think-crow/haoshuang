@@ -3,11 +3,17 @@
   <div class="copyright">{{ .Site.Copyright | safeHTML }}</div>
   <ul class="site-footer-items">
     {{- with .OutputFormats.Get "RSS" }}
-    <li class="site-footer-item-rsslink">
+    <!-- <li class="site-footer-item-rsslink">
       <a href="{{ .RelPermalink }}" type="application/rss+xml" target="_blank" title="RSS">
         <i class="fa-solid fa-rss"></i>
       </a>
+    </li> -->
+    <li class="site-footer-item-rsslink">
+      <a href="{{ "/index.xml" | relURL }}" type="application/rss+xml" target="_blank" title="RSS">
+        <i class="fa-solid fa-rss"></i>
+      </a>
     </li>
+    
     {{- end }}
         {{- range .Site.Menus.footer }}
     <li class="site-footer-item-{{ .Identifier }}"><a href="{{ .URL | safeURL }}" title="{{ .Name }}">{{ .Name }}</a></li>

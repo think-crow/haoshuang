@@ -106,23 +106,23 @@ copyright = "&copy; Copyright 2024 - 2025"
   identifier = "about"
   url = "/about/"
 
-[[menu.footer]]
-  name = "About"
-  weight = 1
-  identifier = "about"
-  url = "/about/"
+# [[menu.footer]]
+#   name = "About"
+#   weight = 1
+#   identifier = "about"
+#   url = "/about/"
 
-[[menu.footer]]
-  name = "Categories"
-  weight = 2
-  identifier = "categories"
-  url = "/categories/"
+# [[menu.footer]]
+#   name = "Categories"
+#   weight = 2
+#   identifier = "categories"
+#   url = "/categories/"
 
-[[menu.footer]]
-  name = "Tags"
-  weight = 3
-  identifier = "tags"
-  url = "/tags/"
+# [[menu.footer]]
+#   name = "Tags"
+#   weight = 3
+#   identifier = "tags"
+#   url = "/tags/"
 
 
 [permalinks]
