@@ -138,7 +138,7 @@ h1.title::before {
 .toc-line, .subtitle, .meta-line {
   font-weight: normal;
 }
-
+/* 文章标题与文章的距离 */
 .article-meta{
   margin-bottom: 8%;
 
@@ -216,6 +216,7 @@ h1.title::before {
 .article {
   margin-bottom: 40px;
   line-height: 1.5;
+  padding: 0 2em;
 }
 .article img {
   max-width: 100%;
@@ -877,6 +878,11 @@ background-color: #FF6600
 /* === sharingbuttons.io end === */
 /* 在手机屏幕上（最大宽度 768px）设置居中显示 */
 @media (max-width: 768px) {
+
+    .article {
+      padding: .5em 0em; /* 小屏幕保持原来的适配 */
+  }
+
   .site-footer {
       display: flex;
       flex-direction: column; /* 列布局 */
