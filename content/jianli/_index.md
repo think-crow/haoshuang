@@ -122,4 +122,18 @@ js:
 2023.05-2023.06 吉林省教育考试命题制卷中心，中高考试卷命题会议保障。  [](#modal-hb8)      
 
 ## 会议保障经历（2025-至今）
-**北京北苑大酒店**，会议室音视频设备运维（14个小会议室+1报告厅+1宴会厅）。
+**北京北苑大酒店**，会议室音视频设备技术支持（12个小会议室+1报告厅+1宴会厅）。
+<div class="photo-grid">
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/1.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/6.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/3.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/4.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/5.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/2.jpg" />
+</div>
+
+主要负责：
+1、提前一天沟通并布设好会场麦克风投影线，调试并测试正常。
+2、会议期间处置临时突发问题。
+酒店所有会议室采用投影+音响扩声，调音台多用为雅马哈模拟调音台。会场视频会议多为USB摄像机配合腾讯、飞书或其他会议软件。
+酒店配有单独的集团华为视频会议终端。
