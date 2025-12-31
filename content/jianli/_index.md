@@ -2,7 +2,7 @@
 title: "简历"
 url: "/jianli"
 type: "section/about"
-date: '2025-06-17'
+date: '2025-12-31'
 toc: false
 no_archives: true
 outputs: ["HTML"] 
@@ -12,25 +12,16 @@ js:
   - "jianli.js"
 ---
 
-
-
 # 任豪爽
-
 
 ## 基本信息
 ---
-
-电话：已隐藏　　　　　　　　　　　　　　<!-- 期待职位：暂无   -->
-邮箱：ren@haoshuang.org　　　　　　　　　　　
-  
-
-
-
-
+求职意向：音视频系统工程师 / 会议系统技术支持  
+电话：已隐藏　　　　　　　　            　　　　　　　　　　  　 邮箱：ren@haoshuang.org　　　　　　　　　　　  
+<!-- 期待职位：暂无   -->    
 ## 教育经历
 ---
 2015.09 ~ 2018.06  南阳师范学院，应用电子专业，专科
-
 
 ##  工作履历
 ---
@@ -39,7 +30,7 @@ js:
 2020.10 - 2021.06 　郑州微智能研究院　　　　　　　　　测试技术员  
 2021.10 - 2023.07 　郑州中音讯谷科技有限公司　　　　　售后技术支持   
 2023.07 - 2025.06  　自由职业  
-2025.06 - 至今   　 　北京北苑酒店　　　　　　　　　　　音响师         
+2025.06 - 至今   　 　北京北苑大酒店　　　　　　　　　　音响师         
 <!-- 
 | 时间段               | 工作单位                  | 职位               |
 | ----------------- | --------------------- | ---------------- |
@@ -49,10 +40,49 @@ js:
 | 2021.10 - 2023.07 | 郑州中音讯谷科技有限公司          | 售后技术支持           |
 | 2023.07 - 至今      | 自由职业                  | 自由职业者，现谋求一份稳定的工作 | -->
 
+
+<br />  
+
+## 会议音视频运维 / 技术保障（2025-至今）
+**北京北苑大酒店三层会议**，负责酒店 12 个小会议室 + 1 个报告厅 + 1 个宴会厅 的日常音视频系统运维与会议保障工作。 
+<div class="photo-grid">
+  <!-- <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/3.jpg" /> -->
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/12-1.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/6.jpg" />
+  <!-- <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/4.jpg" /> -->
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/5.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/1.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/7.jpg" />
+  <!-- <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/9.jpg" /> -->
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/15.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/13.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/11.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/2.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/10.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/14.jpg" />
+  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/8.jpg" />
+  <!-- <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/16.jpg" /> -->
+</div>
+
+**职责：**
+
+* 会议前麦克风、音频、投影及信号线缆的布设、调试与测试，确保系统稳定可用。
+* 会议期间提供现场音视频技术保障，及时处理话筒、扩声、投影及视频会议异常，确保会议顺利进行。
+* 会后进行设备撤收、清点、保管及日常维护，降低设备故障率。
+* 协助会场整体布置，配合会务及相关部门完成会议准备工作。
+* 保障视频会议系统稳定运行，熟练使用腾讯会议、飞书会议及华为视频会议终端。
+
+**设备与环境：**
+
+* 酒店会议室统一采用投影 + 扩声系统。
+* 熟悉雅马哈模拟调音台的日常操作与现场调音。
+* 配备视频矩阵、全向麦克风及有线鹅颈话筒，每场会议需进行现场布线、测试及音频参数调整。
+* 视频会议以 USB 摄像机配合会议软件为主，酒店另配集团级华为视频会议终端。
+* 各会议室均配备可升降投影幕布，熟悉投影、幕布与音频系统的整体联动调试。
+---
+
   
-  </br>
-  
-## 工作技能
+## 现场设备调试经历（2021-2023）
 ---
 主要负责远程技术指导、现场设备调试、售后问题处理，重要会议保障。  
 兼升降器测试维修；中控、电源控制器、智能管理平台焊接组装及售后工单审核。详细内容如下：
@@ -121,19 +151,5 @@ js:
 **大型会议保障**  
 2023.05-2023.06 吉林省教育考试命题制卷中心，中高考试卷命题会议保障。  [](#modal-hb8)      
 
-## 会议保障经历（2025-至今）
-**北京北苑大酒店**，会议室音视频设备技术支持（12个小会议室+1报告厅+1宴会厅）。
-<div class="photo-grid">
-  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/1.jpg" />
-  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/6.jpg" />
-  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/3.jpg" />
-  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/4.jpg" />
-  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/5.jpg" />
-  <img src="https://cdn.jsdelivr.net/gh/think-crow/Backup@main/beijing/2.jpg" />
-</div>
 
-主要负责：
-1、提前一天沟通并布设好会场麦克风投影线，调试并测试正常。
-2、会议期间处置临时突发问题。
-酒店所有会议室采用投影+音响扩声，调音台多用为雅马哈模拟调音台。会场视频会议多为USB摄像机配合腾讯、飞书或其他会议软件。
-酒店配有单独的集团华为视频会议终端。
+在线简历查看：[https://www.haoshuang.org/jianli](https://www.haoshuang.org/jianli)
